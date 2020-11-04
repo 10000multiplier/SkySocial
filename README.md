@@ -1,12 +1,13 @@
 # SkySocial
 
-Meet your new decentralized hangout spot
-
 ![Logo](./dist/SkySocialLogo.png)
+
+Meet your new decentralized hangout spot.
+
 
 ## SkyDB Hackaton
 
 To run:
 
-    yarn
-    yarn start
+    npm
+    npm start
