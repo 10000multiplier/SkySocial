@@ -2,7 +2,7 @@
   "name": "skysocial",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,12 @@
   "author": "10000multiplier",
   "license": "MIT",
   "dependencies": {
-    "skynet-js": "^2.4.0"
+    "base32-encode": "^1.1.1",
+    "base64-js": "^1.3.1",
+    "buffer": "^5.7.0",
+    "sia-js": "github:dawe35/sia-js",
+    "skynet-js": "^2.4.0",
+    "url-parse": "^1.4.7"
   },
   "private": true,
   "devDependencies": {
