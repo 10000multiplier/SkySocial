@@ -87,19 +87,16 @@
                 if (response == '') { // file not found
                     note.value = ''
                 } else { // success
-                    var respObs = JSON.parse(response)
-                    note.value = respObs.data
+                    note.value = response.data
                 }
             })
         }
 
         function saveNote() {
-            // convert note to json
             var note = document.getElementById('note').value
-            var json = JSON.stringify({ data: note })
 
             // upload to registry with SkyID key
-            skyid.setFile('note', json, function (response) {
+            skyid.setFile('note', { data: note }, function (response) {
                 if (response != true) {
                     alert('Sorry, but upload failed :(')
                 }
